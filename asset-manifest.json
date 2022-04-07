@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/fsopen-part2-notes/static/css/main.1becb9f2.css",
-    "main.js": "/fsopen-part2-notes/static/js/main.6434f54c.js",
-    "index.html": "/fsopen-part2-notes/index.html",
-    "main.1becb9f2.css.map": "/fsopen-part2-notes/static/css/main.1becb9f2.css.map",
-    "main.6434f54c.js.map": "/fsopen-part2-notes/static/js/main.6434f54c.js.map"
+    "main.css": "/part3-notes-front/static/css/main.1becb9f2.css",
+    "main.js": "/part3-notes-front/static/js/main.6434f54c.js",
+    "index.html": "/part3-notes-front/index.html",
+    "main.1becb9f2.css.map": "/part3-notes-front/static/css/main.1becb9f2.css.map",
+    "main.6434f54c.js.map": "/part3-notes-front/static/js/main.6434f54c.js.map"
   },
   "entrypoints": [
     "static/css/main.1becb9f2.css",
