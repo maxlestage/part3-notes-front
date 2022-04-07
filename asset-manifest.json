@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fsopen-part2-notes/static/css/main.1becb9f2.css",
+    "main.js": "/fsopen-part2-notes/static/js/main.6434f54c.js",
+    "index.html": "/fsopen-part2-notes/index.html",
+    "main.1becb9f2.css.map": "/fsopen-part2-notes/static/css/main.1becb9f2.css.map",
+    "main.6434f54c.js.map": "/fsopen-part2-notes/static/js/main.6434f54c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1becb9f2.css",
+    "static/js/main.6434f54c.js"
+  ]
+}
