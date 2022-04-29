@@ -4,7 +4,6 @@ import Note from "./components/Note";
 import Notification from "./components/Notification";
 import Footer from "./components/Footer";
 import noteService from "./services/notes";
-import axios from "axios";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
@@ -12,17 +11,9 @@ const App = () => {
   const [showAll, setShowAll] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  // useEffect(() => {
-  //   noteService
-  //     .getAll()
-  //     .then(initialNotes => {
-  //       setNotes(initialNotes)
-  //     })
-  // }, [])
-
   useEffect(() => {
-    axios.get("http://localhost:3001/api/notes").then((res) => {
-      setNotes(res.data);
+    noteService.getAll().then((n) => {
+      setNotes(n);
     });
   }, []);
 
@@ -65,6 +56,12 @@ const App = () => {
       });
   };
 
+  const removeContent = (id) => {
+    const note = notes.find((n) => n.id === id);
+    noteService.remove(note.id);
+    setNotes(notes.filter((note) => note.id !== id));
+  };
+
   const notesToShow = showAll ? notes : notes.filter((note) => note.important);
 
   return (
@@ -82,6 +79,7 @@ const App = () => {
             key={note.id}
             note={note}
             toggleImportance={() => toggleImportanceOf(note.id)}
+            remove={() => removeContent(note.id)}
           />
         ))}
       </ul>
