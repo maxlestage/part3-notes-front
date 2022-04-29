@@ -1,7 +1,7 @@
 {
   "name": "notes",
   "version": "0.1.0",
-  "homepage": "https://maxlestage.github.io/fsopen-part2-notes/",
+  "homepage": "https://maxlestage.github.io/part3-notes-front/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
